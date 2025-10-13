@@ -89,7 +89,7 @@ const filteredData = computed(() => {
 // 获取工具数据
 const fetchTools = async () => {
   try {
-    const res = await axios.get('http://localhost:8081/tools')
+    const res = await axios.get('http://www.moon5.fun:8081/tools')
     data.value = res.data?.data || []
   } catch (err) {
     console.error('获取工具数据失败', err)

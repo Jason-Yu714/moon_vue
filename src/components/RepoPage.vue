@@ -38,7 +38,7 @@ const goHome = () => router.push('/')
 
 const fetchRepo = async () => {
   try {
-    const res = await axios.get('http://localhost:8081/repo')
+    const res = await axios.get('http://www.moon5.fun:8081/repo')
     data.value = res.data?.data?.data || []
   } catch (err) {
     console.error(err)

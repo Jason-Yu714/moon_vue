@@ -48,7 +48,7 @@ const parseLocalDate = (str) => {
 
 const fetchData = async () => {
   try {
-    const res = await axios.get('http://localhost:8081/topic')
+    const res = await axios.get('http://www.moon5.fun:8081/topic')
     data.value = res.data?.data || []
   } catch {
     data.value = []
