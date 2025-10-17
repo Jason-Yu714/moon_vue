@@ -6,6 +6,8 @@
       <button class="active">Topic</button>
       <button @click="goRepo">Repo</button>
       <button @click="goTool">Tool</button>
+      <button @click="goFun">Fun</button>
+
 
     </div>
 
@@ -55,9 +57,12 @@ const fetchData = async () => {
   }
 }
 
-const goRepo = () => router.push('repo')
+const goRepo = () => router.push('repos')
 
-const goTool = () => router.push('tools')
+const goTool = () => router.push('tool')
+
+const goFun = () => router.push('fun')
+
 
 
 const filteredData = computed(() => {
